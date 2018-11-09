@@ -18,6 +18,7 @@ class Load extends Component {
       team2: '',
       team3: '',
     };
+    console.log(props)
     this.begin = this.begin.bind(this);
     this.handeleClick = this.handeleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);

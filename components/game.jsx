@@ -3,6 +3,7 @@
 /* eslint-disable import/extensions */
 /* eslint-disable react/sort-comp */
 import React from 'react';
+
 import Lifelines from './lifelines.jsx';
 import Trivia from './trivia.jsx';
 import Timer from './timer.jsx';
@@ -182,7 +183,7 @@ class Game extends React.Component {
 
   increaseScore() {
     const { currTeam } = this.state;
-    if (currTeam === 'team1') {
+    if (currTeam === 'Team 1') {
       sessionStorage.setItem('score1', (Number(sessionStorage.score1) + 1));
       this.setState(() => ({
         visibility: true,
