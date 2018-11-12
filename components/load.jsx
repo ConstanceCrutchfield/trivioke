@@ -69,7 +69,7 @@ class Load extends Component {
         <center>
           <div>
             <div key="team">
-              <Team handleChange={this.handleChange} currentPlayer={currentPlayer} />
+              <Team handleChange={this.handleChange} currentPlayer={currentPlayer} socket={this.props.socket} />
             </div>
             <Filters click={this.handeleClick} />
             <table style={{
@@ -94,7 +94,7 @@ class Load extends Component {
     }
     return (
       <div>
-        <Game category={category} diff={diff} name1={team1} name2={team2} socket={this.props.socket} />
+        <Game category={category} diff={diff} name1={team1} name2={team2} name3={team3} socket={this.props.socket} />
       </div>
     );
   }

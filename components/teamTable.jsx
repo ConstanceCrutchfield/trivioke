@@ -9,7 +9,7 @@ class Table extends Component {
   render() {
     const { handleChange, currentPlayer } = this.props;
 
-    if (currentPlayer === 1) {
+    if (this.props.socket.id === 1) {
       return (
         <div>
           <form>
@@ -27,7 +27,7 @@ class Table extends Component {
           </form>
         </div>
       );
-    } if (currentPlayer === 2) {
+    } if (this.props.socket.id === 2) {
       return (
         <div>
           <form>
@@ -45,7 +45,7 @@ class Table extends Component {
           </form>
         </div>
       );
-    } if (currentPlayer === 3) {
+    } if (this.props.socket.id === 3) {
       return (
         <div>
           <form>
